@@ -32,7 +32,17 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 **Config settings**
     vim config/application.yml
-    
+
+
+# TradingView Charting Library and Ruby on Rails Integration
+
+## How to add
+
+1. Copy `charting_library` folder from https://github.com/tradingview/charting_library/ to `/vendor/assets/javascripts`. The earliest supported version of the Charting Library is 1.12. If you get 404 then you need to [request an access to this repository](https://www.tradingview.com/HTML5-stock-forex-bitcoin-charting-library/).
+
+1. Copy `datafeeds` folder from https://github.com/tradingview/charting_library/ to `/vendor/assets/javascripts`.
+
+
 ##### Compiling assets
     bin/rake tmp:clear tmp:create
     bin/rake assets:clobber assets:precompile
