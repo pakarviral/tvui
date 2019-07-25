@@ -1,4 +1,4 @@
-# Peatio Trading UI
+# Peatio Trading UI Tradingview
 
 ## Installation steps
 
