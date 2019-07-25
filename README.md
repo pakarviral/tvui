@@ -42,6 +42,20 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 
 1. Copy `datafeeds` folder from https://github.com/tradingview/charting_library/ to `/vendor/assets/javascripts`.
 
+##### Config nginx
+
+server {
+    .
+    .
+    .
+    root /home/user/peatio/public;
+    location ~ ^/(?:trading|trading-ui-assets)\/ {
+        passenger_enabled on;
+        gzip on;
+        passenger_app_env production;
+        root  /home/user/trading-ui/public;
+    }  
+}
 
 ##### Compiling assets
     bin/rake tmp:clear tmp:create
