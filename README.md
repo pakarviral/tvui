@@ -43,7 +43,7 @@ A JavaScript Runtime is needed for Asset Pipeline to work. Any runtime will do b
 1. Copy `datafeeds` folder from https://github.com/tradingview/charting_library/ to `/vendor/assets/javascripts`.
 
 ##### Config nginx
-
+```
 server {
     .
     .
@@ -56,6 +56,7 @@ server {
         root  /home/user/trading-ui/public;
     }  
 }
+```
 
 ##### Compiling assets
     bin/rake tmp:clear tmp:create
